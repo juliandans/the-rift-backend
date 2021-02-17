@@ -11,6 +11,7 @@ app.post('/signup', async (req,res) => {
   const { body: {name, age} } = req;
   const Jeff = new Person({name, age})
   await Jeff.save();
+  res.status(200).json(Jeff);
 });
 
 app.listen(port, () => {
