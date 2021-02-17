@@ -1,0 +1,15 @@
+{
+  "name": "the-rift-backend",
+  "version": "1.0.0",
+  "description": "Backend for The Rift",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "jugliat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
