@@ -26,12 +26,14 @@ app.use(cors({ origin: process.env.CLIENT_ORIGIN, credentials: true }));
 /**
  * Manages session information stored in Cookie
  */
+app.enable("trust proxy");
 app.use(
   cookieSession({
     name: "the-rift-session",
     secret: process.env.SESSION_SECRET,
     maxAge: 24 * 60 * 60 * 1000 * 60, // 60 days
     httpOnly: true,
+    secureProxy: true,
   })
 );
 
