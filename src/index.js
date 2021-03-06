@@ -33,7 +33,6 @@ app.use(
     secret: process.env.SESSION_SECRET,
     maxAge: 24 * 60 * 60 * 1000 * 60, // 60 days
     httpOnly: true,
-    sameSite: "none",
     secure: true,
     secureProxy: true,
   })
