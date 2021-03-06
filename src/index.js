@@ -30,7 +30,7 @@ app.use(
   cookieSession({
     name: "the-rift-session",
     secret: process.env.SESSION_SECRET,
-    maxAge: 24 * 60 * 60 * 1000,
+    maxAge: 24 * 60 * 60 * 1000 * 60, // 60 days
     httpOnly: false,
   })
 );
